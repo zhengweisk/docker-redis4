@@ -6,7 +6,7 @@ source /hbb_exe_gc_hardened/activate
 
 set -x
 
-export REDIS_VER=4.0.0
+export REDIS_VER=4.0.1
 export REDIS_TAR=redis-${REDIS_VER}.tar.gz
 
 curl -fsSLO http://download.redis.io/releases/${REDIS_TAR}
