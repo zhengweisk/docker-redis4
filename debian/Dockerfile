@@ -7,7 +7,7 @@ WORKDIR /root
 RUN set -x \
  && apt-get update && apt-get install -y --no-install-recommends tcl \
  && rm -rf /var/lib/apt/lists/* \
- && export REDIS_VER=4.0.0 \
+ && export REDIS_VER=4.0.2 \
  && export REDIS_TAR=redis-${REDIS_VER}.tar.gz \
  && curl -fsSLO http://download.redis.io/releases/${REDIS_TAR} \
  && tar -xzf ${REDIS_TAR} \
